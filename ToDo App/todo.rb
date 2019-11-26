@@ -357,26 +357,3 @@ end
 
 
 
-# thaibao = thaibao.split(",").map { |s| s.to_i }
-# thaibao.reject! do |x|
-#     x <= 0
-# end
-# thaibao = thaibao.split(",").map { |s| s.to_i }
-
-# puts "#{thaibao[2]}"
-# a.mark(*thaibao,true)
-# a.show_all
-# a.list.removeActWihName("fuck you", "Hey boy")
-# a.show_all
-
-# a.show_all
-# puts "#{a.list.items}"
-# a.list.display
-# z=a.show_done
-
-# puts "#{a.list.items.length}"
-# a.list
-# a.load_data
-# a.list.display
-# print "#{z}"
-# print "#{b}"
