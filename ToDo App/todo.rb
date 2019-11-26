@@ -111,47 +111,13 @@ class List
         end
     end
 
-    
-    # def removeActWihName(*act)
-    #     act.each do |x|
-    #         @items.each do |z|
-    #             if x == z.name
-    #                 @items.delete(z)
-                    
-    #             end
-    #         end
-    #     end
-    
-    # end
-
-    def removeActWithIndex(*list)
-        # list.reject! do |x|
-        #     x <= 0
-        # end
-        
-        #identify index-real because after delete, index of elements are updated
-        # listSort= (list.sort).uniq # sort listIndex and remove multiple elements same value, keep one
-        # newList = []
-        # subToReal = 0
-        # listSort.map do |x|
-        #     x = x - subToReal
-        #     subToReal = subToReal +1
-        #     newList +=[x]
-        # end
-        # #remove item by using newList with index-real
-        # newList.each do |x|
-        #     @items.delete_at(x-1)
-        # end
-
-
+    def removeActWithIndex(*list)       
         listSort= (list.sort).uniq #sort listIndex and remove multiple elements same value, keep one
         subToReal = 0
         listSort.map do |x|
             @items.delete_at(x-1-subToReal)#remove item by using newList with index-1-subToReal
             subToReal = subToReal +1
         end
-       
-
     end
 
     def mark_act(*list,flag)
